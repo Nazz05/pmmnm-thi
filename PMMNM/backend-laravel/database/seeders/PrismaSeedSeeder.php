@@ -38,7 +38,7 @@ class PrismaSeedSeeder extends Seeder
 
         // Create admin and sample users
         $admin = User::firstOrCreate(
-            ['email' => 'admin@ltwnc.tech'],
+            ['email' => 'admin@pmmnm.tech'],
             [
                 'password' => 'Admin@123',
                 'full_name' => 'Admin User',
@@ -48,7 +48,7 @@ class PrismaSeedSeeder extends Seeder
             ]
         );
 
-        $testUsers = ['user@ltwnc.tech','user2@ltwnc.tech','user3@ltwnc.tech','user4@ltwnc.tech','user5@ltwnc.tech'];
+        $testUsers = ['user@pmmnm.tech','user2@pmmnm.tech','user3@pmmnm.tech','user4@pmmnm.tech','user5@pmmnm.tech'];
         $seededUsers = [];
 
         foreach ($testUsers as $idx => $email) {
