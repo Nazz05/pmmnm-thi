@@ -159,5 +159,5 @@ Ghi chú:
 ## Link online đã deploy
 
 - Website: https://hnamofficial.id.vn
-- API base URL: https://hnamofficial.id.vn/api
+- API base URL: https://api.hnamofficial.id.vn
 
