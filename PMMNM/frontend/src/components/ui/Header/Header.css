@@ -1,0 +1,160 @@
+/* Header.css */
+
+.announcement-bar {
+  background-color: #003380;
+  color: white;
+  text-align: center;
+  padding: 0.5rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+.announcement-bar a {
+  text-decoration: underline;
+}
+
+.announcement-bar a:hover {
+  color: #e5e7eb;
+}
+
+.navbar {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  background-color: rgba(255, 255, 255, 0.9);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.container {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.navbar-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 5rem;
+  gap: 1rem;
+}
+
+.mobile-menu {
+  display: none;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.logo a {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  font-size: 2.25rem;
+  color: #003380;
+  text-decoration: none;
+  letter-spacing: -0.025em;
+  line-height: 1;
+  margin-top: 1rem;
+  display: block;
+}
+
+.nav-links {
+  display: none;
+  align-items: center;
+  gap: 1rem;
+  margin-left: 8rem;
+}
+
+.nav-links a {
+  color: #374151;
+  text-decoration: none;
+  font-weight: 500;
+  white-space: nowrap;
+  transition: color 0.2s;
+  display: flex;
+  align-items: center;
+  line-height: 1;
+}
+
+.nav-links a:hover {
+  color: #003380;
+}
+
+.nav-actions {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.icon-btn {
+  padding: 0.5rem;
+  color: #6b7280;
+  background: none;
+  border: none;
+  cursor: pointer;
+  transition: color 0.2s;
+  border-radius: 0.375rem;
+}
+
+.icon-btn:hover {
+  color: #003380;
+}
+
+.cart-btn {
+  position: relative;
+}
+
+.cart-badge {
+  position: absolute;
+  top: -0.5rem;
+  right: -0.5rem;
+  height: 1.25rem;
+  width: 1.25rem;
+  background-color: #ef4444;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1;
+}
+
+.user-menu {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.admin-btn {
+  color: #f59e0b !important;
+  transition: all 0.3s ease;
+}
+
+.admin-btn:hover {
+  color: #d97706 !important;
+  background-color: #fffbeb;
+  transform: scale(1.1);
+}
+
+.logout-btn {
+  color: #dc2626 !important;
+}
+
+.logout-btn:hover {
+  color: #b91c1c !important;
+  background-color: #fef2f2;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+  }
+}

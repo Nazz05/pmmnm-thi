@@ -1,0 +1,474 @@
+.register-page {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, #f9fafb 0%, #f3f4f6 100%);
+  padding: 2rem 1rem;
+  font-family: 'Inter', sans-serif;
+}
+
+.register-wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 3rem;
+  max-width: 1100px;
+  width: 100%;
+  align-items: center;
+}
+
+/* Form Column */
+.register-form-column {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.register-form-box {
+  width: 100%;
+  background: white;
+  border-radius: 0.75rem;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  padding: 2.5rem;
+}
+
+.register-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  margin-bottom: 1.5rem;
+}
+
+.logo-link {
+  text-decoration: none;
+}
+
+.logo-text {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #003380;
+  letter-spacing: -0.025em;
+}
+
+.register-title {
+  font-family: Arial, sans-serif;
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 0.5rem 0;
+}
+
+.register-subtitle {
+  font-size: 0.95rem;
+  color: #6b7280;
+  margin: 0;
+  line-height: 1.5;
+}
+
+/* Form Styles */
+.register-form {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.form-label {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.form-input {
+  width: 100%;
+  padding: 0.875rem 1rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 0.5rem;
+  font-size: 0.95rem;
+  transition: all 0.2s;
+  background: #fafbfc;
+  font-family: Arial, sans-serif;
+}
+
+.form-input:focus {
+  outline: none;
+  border-color: #003380;
+  background: white;
+  box-shadow: 0 0 0 3px rgba(0, 51, 128, 0.1);
+}
+
+.form-input.error {
+  border-color: #ef4444;
+}
+
+.form-input.error:focus {
+  border-color: #ef4444;
+  box-shadow: 0 0 0 3px rgba(239, 68, 68, 0.1);
+}
+
+.error-message {
+  font-size: 0.8125rem;
+  color: #ef4444;
+  margin-top: 0.25rem;
+}
+
+.error-message-box {
+  background: #fee2e2;
+  border-left: 4px solid #ef4444;
+  color: #991b1b;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+}
+
+.success-message-box {
+  background: #dcfce7;
+  border-left: 4px solid #10b981;
+  color: #15803d;
+  padding: 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+}
+
+/* Checkbox Styles */
+.checkbox-wrapper {
+  gap: 0;
+}
+
+.checkbox-group {
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+}
+
+.form-checkbox {
+  width: 18px;
+  height: 18px;
+  min-width: 18px;
+  margin-top: 0.125rem;
+  border: 1.5px solid #d1d5db;
+  border-radius: 0.375rem;
+  background: white;
+  cursor: pointer;
+  accent-color: #003380;
+}
+
+.form-checkbox:hover {
+  border-color: #003380;
+}
+
+.form-checkbox:checked {
+  background-color: #003380;
+  border-color: #003380;
+}
+
+.form-checkbox.error {
+  border-color: #ef4444;
+}
+
+.checkbox-label {
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.5;
+  flex: 1;
+}
+
+.link {
+  color: #003380;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.link:hover {
+  text-decoration: underline;
+}
+
+/* Button Styles */
+.register-btn {
+  width: 100%;
+  padding: 1rem;
+  background: linear-gradient(135deg, #003380 0%, #002557 100%);
+  color: white;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-family: 'Inter', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.register-btn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 10px 25px rgba(0, 51, 128, 0.3);
+}
+
+.register-btn:active:not(:disabled) {
+  transform: translateY(0);
+}
+
+.register-btn:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Login Link */
+.login-link {
+  text-align: center;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid #e5e7eb;
+}
+
+.login-link p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  margin: 0;
+}
+
+/* Benefits Column */
+.register-benefits-column {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.benefits-card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.benefits-card h3 {
+  font-family: Arial, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 1.5rem 0;
+  padding-bottom: 1rem;
+  border-bottom: 2px solid #003380;
+}
+
+.benefit-item {
+  margin-bottom: 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.benefit-item:last-child {
+  margin-bottom: 0;
+  padding-bottom: 0;
+  border-bottom: none;
+}
+
+.benefit-icon {
+  font-size: 1.75rem;
+  margin-bottom: 0.5rem;
+}
+
+.benefit-item h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  color: #111827;
+  margin: 0 0 0.5rem 0;
+}
+
+.benefit-item p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  line-height: 1.6;
+  margin: 0;
+}
+
+.testimonials-card {
+  background: linear-gradient(135deg, #003380 0%, #004d99 100%);
+  border-radius: 0.75rem;
+  padding: 1.75rem;
+  text-align: center;
+  color: white;
+}
+
+.testimonial {
+  font-style: italic;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  margin: 0 0 1rem 0;
+}
+
+.testimonial-author {
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin: 0;
+  opacity: 0.9;
+}
+
+/* Responsive - Tablet */
+@media (max-width: 1024px) {
+  .register-wrapper {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .register-form-box {
+    padding: 2rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+  }
+
+  .register-title {
+    font-size: 1.5rem;
+  }
+}
+
+/* Responsive - Mobile */
+@media (max-width: 640px) {
+  .register-page {
+    padding: 1rem;
+  }
+
+  .register-wrapper {
+    gap: 1.5rem;
+  }
+
+  .register-form-box {
+    padding: 1.5rem;
+  }
+
+  .register-header {
+    margin-bottom: 1.5rem;
+  }
+
+  .logo-text {
+    font-size: 1.5rem;
+  }
+
+  .register-title {
+    font-size: 1.25rem;
+    margin-bottom: 0.25rem;
+  }
+
+  .register-subtitle {
+    font-size: 0.875rem;
+  }
+
+  .register-form {
+    gap: 0.875rem;
+  }
+
+  .form-row {
+    grid-template-columns: 1fr;
+    gap: 0.875rem;
+  }
+
+  .form-input {
+    padding: 0.75rem 0.875rem;
+    font-size: 0.9rem;
+  }
+
+  .form-label {
+    font-size: 0.8125rem;
+  }
+
+  .register-btn {
+    padding: 0.875rem;
+    font-size: 0.95rem;
+  }
+
+  .benefits-card {
+    padding: 1.5rem;
+  }
+
+  .benefits-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 1rem;
+  }
+
+  .benefit-item {
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .benefit-icon {
+    font-size: 1.5rem;
+  }
+
+  .benefit-item h4 {
+    font-size: 0.95rem;
+  }
+
+  .benefit-item p {
+    font-size: 0.8125rem;
+  }
+
+  .testimonials-card {
+    padding: 1.25rem;
+  }
+
+  .testimonial {
+    font-size: 0.875rem;
+    margin-bottom: 0.75rem;
+  }
+
+  .testimonial-author {
+    font-size: 0.8125rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .register-form-box {
+    padding: 1.25rem;
+  }
+
+  .logo-text {
+    font-size: 1.25rem;
+  }
+
+  .register-title {
+    font-size: 1.125rem;
+  }
+
+  .register-subtitle {
+    font-size: 0.8125rem;
+  }
+}
+
+}
+
+/* Error Styling */
+.input-error {
+  border-color: #dc3545 !important;
+  background-color: #fff5f5 !important;
+}
+
+.input-error:focus {
+  border-color: #dc3545 !important;
+  box-shadow: 0 0 0 0.2rem rgba(220, 53, 69, 0.25) !important;
+}
+
+.error-message {
+  display: block;
+  color: #dc3545;
+  font-size: 13px;
+  margin-top: 5px;
+  font-weight: 500;
+}

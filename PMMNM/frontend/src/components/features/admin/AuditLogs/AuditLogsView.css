@@ -1,0 +1,58 @@
+.audit-logs-view {
+    padding: 20px;
+}
+
+.audit-logs-header {
+    margin-bottom: 24px;
+    border-bottom: 2px solid #f0f0f0;
+    padding-bottom: 16px;
+}
+
+.audit-logs-header h1 {
+    margin: 0;
+    font-size: 24px;
+    font-weight: 600;
+    color: #1f1f1f;
+}
+
+.audit-logs-filters {
+    background: #fafafa;
+    padding: 16px;
+    border-radius: 4px;
+    margin-bottom: 24px;
+    border: 1px solid #f0f0f0;
+}
+
+.audit-logs-filters .ant-select,
+.audit-logs-filters .ant-input {
+    border-radius: 4px;
+}
+
+.audit-logs-pagination {
+    margin-top: 24px;
+    text-align: right;
+    padding-top: 16px;
+    border-top: 1px solid #f0f0f0;
+}
+
+.audit-logs-pagination .ant-pagination {
+    display: inline-block;
+}
+
+@media (max-width: 768px) {
+    .audit-logs-view {
+        padding: 12px;
+    }
+
+    .audit-logs-header {
+        margin-bottom: 16px;
+    }
+
+    .audit-logs-header h1 {
+        font-size: 20px;
+    }
+
+    .audit-logs-filters {
+        padding: 12px;
+    }
+}
